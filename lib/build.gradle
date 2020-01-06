@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cample.system.redis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.2.1.RELEASE'
+    compile 'com.alibaba:fastjson:1.2.54'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+}
