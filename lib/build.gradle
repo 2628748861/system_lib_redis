@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
 group 'com.cample.system.redis'
@@ -9,10 +11,11 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter-data-redis:2.2.1.RELEASE'
-    compile 'com.alibaba:fastjson:1.2.54'
-    compileOnly 'org.projectlombok:lombok:1.18.2'
+    compile 'org.springframework.boot:spring-boot-starter-data-redis'
+    compile  'com.github.2628748861:system_lib_common:1.0.0'
+
 }

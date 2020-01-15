@@ -1,4 +1,4 @@
 rootProject.name = 'redis'
 include 'lib'
-include 'test'
+include 'app'
 
